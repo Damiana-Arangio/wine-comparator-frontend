@@ -1,3 +1,5 @@
+/************************************** VERSIONE DESKTOP *************************************************************/
+
 /**********************
     REGOLE GENERALI
 ***********************/
@@ -758,3 +760,317 @@ header {
         margin-bottom: 50px;
         color: var(--color-light-gold);
     }
+
+/* Desktop piccoli */
+@media screen and (max-width: 1200px) {
+
+    /************************
+        MODALE - CONFRONTO
+    *************************/
+    .overlay-modale {
+        width: 60%;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+
+}
+
+/************************************** VERSIONE TABLET *************************************************************/
+
+
+/* Tablet orizzontale*/
+@media screen and (max-width: 992px) {
+
+    /************************
+        MODALE - CONFRONTO
+    *************************/
+    .overlay-modale {
+        width: 80%;
+        padding: 25px;
+    }
+
+    /* Contenitore dei due slot per il confronto */
+    .container-slots-confronto {
+        gap: 20px;
+    }
+
+    /** Slot pieno */
+    .slot-pieno {
+        padding: 10px 15px;
+    }
+
+}
+
+/* Tablet verticale */
+@media screen and (max-width: 768px) {
+
+    /****************
+        LISTA VINI
+    *****************/
+
+    /** LISTA VINI */
+
+    /* Card */
+    .vino-card {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    /************************
+        MODALE - CONFRONTO
+    *************************/
+    .overlay-modale {
+        width: 92%;
+        padding: 25px 20px;
+    }
+
+    /* Contenitore dei due slot per il confronto */
+    .container-slots-confronto {
+        gap: 15px;
+    }
+
+}
+
+/************************************ VERSIONE SMARTPHONE ***********************************************************/
+
+/* Smartphone orizzontale */
+@media screen and (max-width: 576px) {
+
+    /****************
+        LISTA VINI
+    *****************/
+
+    /** FILTRI E ORDINAMENTI */
+
+    /* Searchbar */
+    .container-searchbar {
+        width: 100%;
+    }
+
+    /* Bottoni Filtri */
+    .container-filtri-e-ordinamenti {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .container-filtri {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-filtri {
+        flex-basis: calc((100% - 10px) / 2);
+        margin-right: 0;
+        padding: 10px 15px;
+    }
+
+    /* Select Ordinamenti */
+    .container-ordinamenti {
+        width: 100%;
+        text-align: center;
+    }
+
+    /** LISTA VINI */
+
+    /* Card */
+    .vino-card {
+        flex-basis: 100%;
+    }
+
+    /************************
+        MODALE - CONFRONTO
+    *************************/
+    .overlay-modale {
+        width: 92%;
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 25px 18px;
+    }
+
+    .overlay-modale h2 {
+        font-size: 1.4rem;
+        margin-bottom: 30px;
+    }
+
+    /* Contenitore dei due slot per il confronto */
+    .container-slots-confronto {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+
+    /* Singolo slot confronto */
+    .container-singolo-slot-confronto {
+        flex-basis: auto;
+        min-height: 220px;
+    }
+
+    /** Slot vuoto */
+    .slot-vuoto {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+        padding: 25px 15px;
+    }
+
+    /** Slot pieno */
+    .slot-pieno {
+        padding: 15px 12px;
+    }
+
+    .vino-img-confronto {
+        height: 105px;
+    }
+
+}
+
+/* Smartphone verticale */
+@media screen and (max-width: 414px) {
+
+    /*************
+        HEADER
+    **************/
+    header {
+        height: 70px;
+    }
+
+    body {
+        padding-top: 70px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    /** Navbar */
+    .navbar {
+        font-size: 1rem;
+    }
+
+    .container-links-lr {
+        gap: 12px;
+    }
+
+    .container-links-lr * {
+        font-size: 17px;
+    }
+
+    .img-logo {
+        height: 95px;
+        margin-top: 8px;
+    }
+
+    .index-sup {
+        font-size: 10px;
+        min-width: 13px;
+        height: 13px;
+        top: -4px;
+        right: -9px;
+    }
+
+    /**************
+        HOMEPAGE
+    ***************/
+    .container-content {
+        width: 85%;
+        letter-spacing: 4px;
+    }
+
+    .container-content h1 {
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+
+    .container-content p {
+        margin-bottom: 45px;
+    }
+
+    /****************
+        LISTA VINI
+    *****************/
+
+    /** FILTRI E ORDINAMENTI */
+
+    /* Searchbar */
+    .container-searchbar {
+        height: 42px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    /* Bottoni Filtri */
+    .btn-filtri {
+        font-size: 0.8rem;
+        padding: 9px 10px;
+    }
+
+    /* Select Ordinamenti */
+    .container-ordinamenti {
+        padding: 10px;
+    }
+
+    .select-ordinamenti {
+        font-size: 0.9rem;
+    }
+
+    /** LISTA VINI */
+
+    /* Card */
+    .vino-card {
+        padding: 45px 0 22px;
+    }
+
+    .vino-img {
+        height: 165px;
+    }
+
+}
+
+/* Smartphone molto piccoli */
+@media screen and (max-width: 360px) {
+
+    /*************
+        HEADER
+    **************/
+    .container-links-lr {
+        gap: 8px;
+    }
+
+    .container-links-lr * {
+        font-size: 15px;
+    }
+
+    .img-logo {
+        height: 80px;
+        margin-top: 6px;
+    }
+
+    .index-sup {
+        font-size: 9px;
+        min-width: 12px;
+        height: 12px;
+        right: -8px;
+    }
+
+}
+
+/* Smartphone extra piccoli */
+@media screen and (max-width: 320px) {
+
+    /*************
+        HEADER
+    **************/
+    .container-links-lr {
+        gap: 6px;
+    }
+
+    .container-links-lr * {
+        font-size: 14px;
+    }
+
+    .img-logo {
+        height: 72px;
+    }
+
+}
